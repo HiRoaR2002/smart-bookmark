@@ -224,7 +224,7 @@ export default function Home() {
                 onChange={(e) => setTitle(e.target.value)}
                 placeholder="Enter bookmark title"
                 required
-                className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300 group-hover:border-gray-300 bg-white"
+                className="w-full px-4 py-3 border-2 border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300 group-hover:border-indigo-400 bg-gray-50/50 text-gray-900 placeholder:text-gray-500"
               />
             </div>
             <div className="group">
@@ -238,7 +238,7 @@ export default function Home() {
                 onChange={(e) => setUrl(e.target.value)}
                 placeholder="https://example.com"
                 required
-                className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300 group-hover:border-gray-300 bg-white"
+                className="w-full px-4 py-3 border-2 border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300 group-hover:border-indigo-400 bg-gray-50/50 text-gray-900 placeholder:text-gray-500"
               />
             </div>
             <button
