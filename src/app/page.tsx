@@ -4,6 +4,7 @@ import { createClient } from '@/lib/supabase/client'
 import { useRouter } from 'next/navigation'
 import { useEffect, useState } from 'react'
 import toast, { Toaster } from 'react-hot-toast'
+import { Bookmark as BookmarkIcon } from 'lucide-react'
 
 type Bookmark = {
   id: string
@@ -192,10 +193,13 @@ export default function Home() {
         {/* Header */}
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-8 sm:mb-12 gap-4">
           <div className="animate-fade-in">
-            <h1 className="text-4xl sm:text-5xl font-bold text-white mb-2 drop-shadow-lg">
-              ✨ My Bookmarks
-            </h1>
-            <p className="text-white/80 text-sm sm:text-base">
+            <div className="flex items-center gap-3 mb-2">
+              <BookmarkIcon className="w-10 h-10 sm:w-12 sm:h-12 text-white drop-shadow-lg" strokeWidth={2.5} />
+              <h1 className="text-4xl sm:text-5xl font-bold text-white drop-shadow-lg">
+                My Bookmarks
+              </h1>
+            </div>
+            <p className="text-white/80 text-sm sm:text-base ml-0 sm:ml-1">
               Welcome back, {user?.email?.split('@')[0]}!
             </p>
           </div>
