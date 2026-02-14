@@ -1,0 +1,9 @@
+# robots.txt for Smart Bookmark App
+
+User-agent: *
+Allow: /
+Allow: /login
+Disallow: /auth/
+
+# Sitemap location
+Sitemap: https://smart-bookmark-rouge.vercel.app/sitemap.xml
