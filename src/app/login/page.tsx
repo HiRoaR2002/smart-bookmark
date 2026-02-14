@@ -1,6 +1,7 @@
 'use client'
 
 import { createClient } from '@/lib/supabase/client'
+import { ShieldCheck } from 'lucide-react'
 import { useRouter } from 'next/navigation'
 import { useState } from 'react'
 import toast, { Toaster } from 'react-hot-toast'
@@ -106,8 +107,9 @@ export default function LoginPage() {
           )}
         </button>
 
-        <div className="mt-8 text-center text-sm text-gray-500">
-          <p>✨ Fast, secure, and easy to use</p>
+        <div className="mt-8 flex items-center justify-center gap-2 text-sm text-gray-500">
+          <ShieldCheck className="w-5 h-5 text-green-600" strokeWidth={2} />
+          <p>Fast, secure, and easy to use</p>
         </div>
       </div>
 
